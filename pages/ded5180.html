@@ -16,6 +16,10 @@
         <link href="../app/resources/css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body style="padding: 50px">
+        
+        <a href="tables.html"><button type="button" class="btn btn-primary btn-lg">Go back to Table</button></a>
+        <BR></BR>
+
         <div ng-controller="tableController">
             <table infinite-scroll="getMoreData()" ng-table="tableParams" show-filter="true" class="table table-striped">
                 <tr ng-repeat="user in data">
